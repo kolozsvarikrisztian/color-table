@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <script>
+            for (i=0; i<16; i++){
+                document.write('<tr>');
+                for (j=0; j<16; j++){
+                    // document.write('<td style="background-color: '+ '#'+j.toString(16)+i.toString(16)+'0' +'"></td>')
+                    szin = '#'+j.toString(16)+i.toString(16)+'0';
+                    document.write(`<td style="background-color: ${szin}" title="${szin}"></td>`)
+                }
+                document.write('</tr>');
+            }
+        </script>
+    </table>
+    
+</body>
+</html>
